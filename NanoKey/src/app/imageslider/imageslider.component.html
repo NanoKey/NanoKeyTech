@@ -6,13 +6,20 @@
               <li *ngFor="let image of IMAGES; index as i" data-target="#carouselExampleIndicators" data-slide-to="i" class="active"></li>      
             </ol>
             <div class="carousel-inner">
-              <div *ngFor="let image of IMAGES; index as i" class="carousel-item" [ngClass]="{'active': i==0 }">
-                <img class="d-block w-100" src="{{image.url}}" alt="Second slide">
+              <div  class="carousel-item active">
+                <img class="d-block w-100" src="assets/images/RtImages/imgfour.jpg" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
-                 <b>{{image.title}}</b>
-                  <h5><b><p>{{image.description}}</p></b></h5>
+                 <b>Digital Transformation</b>
+                  <h5><b><p>Empowering organizations to compete with current digital trends and evolutions</p></b></h5>
                 </div>
               </div>
+              <div  class="carousel-item active">
+                  <img class="d-block w-100" src="assets/images/RtImages/imgsix.jpg" alt="Second slide">
+                  <div class="carousel-caption d-none d-md-block">
+                   <b>Digital Transformation</b>
+                    <h5><b><p>Empowering organizations to compete with current digital trends and evolutions</p></b></h5>
+                  </div>
+                </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
