@@ -1,0 +1,19 @@
+.navbar-expand-md{
+    justify-content: space-between !important;
+}
+
+.navbar{
+    padding:0;
+    font-size: 1.1rem !important;
+    background-color: #231f20  !important;
+    height: 3.6rem;
+}
+.navbar-expand-md .navbar-nav .nav-link{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:white;
+    /*font:700 1.4rem/1.4rem "Source Sans Pro","Hiragino Sans GB","Microsoft JhengHei",arial,helvetica,sans-serif;*/
+}

@@ -1,0 +1,31 @@
+.container{
+    margin:0 !important;
+    padding: 0 !important;
+    max-width: none;    
+}
+img{
+    /* object-fit: cover; */
+    /* padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%; */
+    width:960px;
+    height: 560px;
+    /* filter:grayscale(73%);
+    -webkit-filter:grayscale(73%);
+    filter: blur(2px);
+    -webkit-filter: blur(2px); */
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    font-size:3em;
+}
+
+.carousel-item{
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
