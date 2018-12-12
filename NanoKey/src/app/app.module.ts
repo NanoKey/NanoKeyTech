@@ -12,6 +12,7 @@ import { ImagesliderComponent } from './imageslider/imageslider.component';
 
 import {} from './interfaces/image';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
@@ -29,7 +30,8 @@ const routes: Routes = [
     ServicesComponent,
     ContactComponent,
     ImagesliderComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,HttpClientModule,HttpModule,

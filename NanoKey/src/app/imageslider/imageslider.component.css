@@ -17,15 +17,185 @@ img{
     filter: blur(2px);
     -webkit-filter: blur(2px); */
 }
-.carousel-caption{
+/* .carousel-caption{
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
     font-size:3em;
-}
+} */
 
-.carousel-item{
+/* .carousel-item{
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
+} */
+
+/* Carousel base class */
+
+/* Since positioning the image, we need to help out the caption */
+
+/* .carousel-caption {
+	bottom: 14em;
+	z-index: 10;
+	text-align: left;
+} */
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+	height: 45em;
+	background-color: #777;
 }
+
+.carousel-item>img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 32rem;
+}
+
+
+/*--/slider--*/
+
+.carousel-item {
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/banner.jpg") no-repeat;;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/banner.jpg") no-repeat;;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/banner.jpg") no-repeat;;
+	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/banner.jpg") no-repeat;;
+	background-size: cover;
+}
+
+.carousel-item.item2 {
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/bannerOne.jpg") no-repeat;;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/bannerOne.jpg") no-repeat;;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/bannerOne.jpg") no-repeat;;
+	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/bannerOne.jpg") no-repeat;;
+	background-size: cover;
+}
+
+.carousel-item.item3 {
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/bannertwo.jpg") no-repeat;;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/bannertwo.jpg") no-repeat;;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/bannertwo.jpg") no-repeat;;
+	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/bannertwo.jpg") no-repeat;;
+	background-size: cover;
+}
+
+.carousel-item.item4 {
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/bannerthree.jpg") no-repeat;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/bannerthree.jpg") no-repeat;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/bannerthree.jpg") no-repeat;
+	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url("/src/assets/images/banner/bannerthree.jpg") no-repeat;
+	background-size: cover;
+}
+
+.carousel-caption h2,
+.carousel-caption h3 {
+	font-size: 4em;
+    font-weight: 700;
+	letter-spacing: 2px;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+}
+.carousel-caption h2 span, .carousel-caption h3 span {
+    display: block;
+}
+.carousel-caption p {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.carousel-caption a {
+    background: #009688;
+    color: #fff;
+    padding: 15px 65px 15px 25px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    font-size: 15px;
+    position: relative;
+}
+.carousel-caption {
+	bottom: 14em;
+	z-index: 10;
+	text-align: left;
+}
+.carousel-caption a:hover {
+    background: #fff;
+    color: #009688;
+}
+.carousel-caption a:hover.carousel-caption span.fas{
+    background: #009688 !important;
+    color: #fff !important;
+}
+.carousel-indicators {
+    bottom: 20%;
+    left: -64%;
+    cursor: pointer;
+    margin: 0;
+}
+
+.carousel-caption span.fas  {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    background: #fff;
+    font-size: 13px;
+    width: 44px;
+    height: 44px;
+    color: #009688;
+    margin-left: 5px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 30px;
+}
+.bnr-button {
+	margin-top: 2em;
+}
+
+.carousel-control {
+	line-height: 42em;
+}
+
+.carousel-indicators li {
+	display: inline-block;
+	max-width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	margin: 0 5px;
+	background: #fff;
+}
+
+.carousel-indicators .active {
+	background: #009688;
+}
+
+/* Show it is fixed to the top */
+
+/*--//banner --*/
+
+/*-- Responsive Design --*/
+@media(max-width: 1440px){
+	.portfolio-area li {
+		width: 258px;
+	}
+}
+@media(max-width: 1366px){
+	.portfolio-area li {
+		width: 242px;
+	}
+	.carousel-item {
+		height: 38em;
+	}
+	.carousel-caption {
+		bottom: 10em;
+	}
+	.carousel-caption h2, .carousel-caption h3 {
+		font-size: 3.5em;
+	}
+}
+
+/*-- Responsive Design End --*/

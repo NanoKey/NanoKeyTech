@@ -1,40 +1,30 @@
-<!--The content below is only a placeholder and can be replaced.-->
-
-<!-- <header class="navbar navbar-default navbar-fixed-top affix-top" id="navbar" role="banner" data-spy="affix" data-offset-top="51">
-   
-  <div style="text-align:left"> 
-    <img width="250"  src="../assets/images/nanokey.PNG"/> 
-  </div>
-</header>
-<nav>
-    <a routerLink="" routerLinkActive="active-link">Home</a>   |
-  <a routerLink="/About" routerLinkActive="active-link">About-Us</a>   |
-  <a routerLink="/Services" routerLinkActive="active-link">Services</a> | 
-  <a routerLink="/Contact" routerLinkActive="active-link">Contact-Us</a>  |
-</nav>
-<router-outlet></router-outlet> -->
-
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand" href="#"><img src="../assets/images/nanokeytrans.png"/> </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar" class="pull-right"> 
-          <ul class="navbar-nav">          
+<header>
+        <div class="container agile-banner_nav">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand"><img id="imgLogo" src="../assets/images/nk5.png"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item  active">
+                    <a class="nav-link" routerLink="/Home" routerLinkActive="active-link">Home </a>
+            </li>
             <li class="nav-item">
-                    <a class="nav-link" routerLink="/Home" routerLinkActive="active-link">Home</a> 
-                </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/About" routerLinkActive="active-link">About-Us</a>
+                <a class="nav-link" routerLink="/About" routerLinkActive="active-link">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" routerLink="/Services" routerLinkActive="active-link">Services</a>
-            </li>
+            </li>                           
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+            </li> -->
             <li class="nav-item">
-                <a class="nav-link" routerLink="/Contact" routerLinkActive="active-link">Contact-Us</a> 
-            </li>    
-          </ul>
-        </div> 
+                <a class="nav-link" routerLink="/Contact" routerLinkActive="active-link">Contact</a>
+            </li>
+        </ul>
+    </div>
 </nav>
-
+</div>
+</header>
 <router-outlet></router-outlet>

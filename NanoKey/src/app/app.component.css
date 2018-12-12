@@ -5,7 +5,8 @@
 .navbar{
     padding:0;
     font-size: 1.1rem !important;
-    background-color: #231f20  !important;
+    /* background-color: #231f20  !important; */
+    background-color: black  !important;
     height: 3.6rem;
 }
 .navbar-expand-md .navbar-nav .nav-link{
@@ -17,3 +18,231 @@
     color:white;
     /*font:700 1.4rem/1.4rem "Source Sans Pro","Hiragino Sans GB","Microsoft JhengHei",arial,helvetica,sans-serif;*/
 }
+
+#imgLogo{
+    width:36%;
+    background: transparent;
+}
+
+/* New UI Skin Start */
+
+.ubea-container {
+    max-width: 1140px;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+.ubea-nav {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 1001;
+    background: #fff;
+    webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (max-width: 768px) {
+    .ubea-nav {
+      padding: 20px 0;
+    }
+  }
+  .ubea-nav #ubea-logo {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .ubea-nav #ubea-logo em {
+    color: #FF5126;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ubea-nav .menu-1, .ubea-nav .menu-2 {
+      display: none;
+    }
+  }
+
+  .ubea-nav ul {
+    padding: 0;
+    margin: 2px 0 0 0;
+  }
+  .ubea-nav ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline;
+  }
+  .ubea-nav ul li a {
+    font-size: 16px;
+    padding: 30px 10px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .ubea-nav ul li a:hover, .ubea-nav ul li a:focus, .ubea-nav ul li a:active {
+    color: #FF5126;
+  }
+  .ubea-nav ul li.has-dropdown {
+    position: relative;
+  }
+  .ubea-nav ul li.has-dropdown .dropdown {
+    width: 130px;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
+    z-index: 1002;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    text-align: left;
+    background: #fff;
+    padding: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s;
+  }
+  .ubea-nav ul li.has-dropdown .dropdown:before {
+    bottom: 100%;
+    left: 40px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #fff;
+    border-width: 8px;
+    margin-left: -8px;
+  }
+  .ubea-nav ul li.has-dropdown .dropdown li {
+    display: block;
+    margin-bottom: 7px;
+  }
+  .ubea-nav ul li.has-dropdown .dropdown li:last-child {
+    margin-bottom: 0;
+  }
+  .ubea-nav ul li.has-dropdown .dropdown li a {
+    padding: 2px 0;
+    display: block;
+    color: #999999;
+    line-height: 1.2;
+    text-transform: none;
+    font-size: 15px;
+  }
+  .ubea-nav ul li.has-dropdown .dropdown li a:hover {
+    color: #000;
+  }
+  .ubea-nav ul li.has-dropdown .dropdown li.active > a {
+    color: #000 !important;
+  }
+  .ubea-nav ul li.has-dropdown:hover a, .ubea-nav ul li.has-dropdown:focus a {
+    color: #fff;
+  }
+  .ubea-nav ul li.btn-cta a {
+    color: #fff;
+  }
+  .ubea-nav ul li.btn-cta a span {
+    border: none !important;
+    background: #FF5126;
+    padding: 4px 20px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .ubea-nav ul li.btn-cta a:hover span {
+    background: #ff6540;
+    color: #fff;
+  }
+  .ubea-nav ul li.active > a {
+    color: #FF5126 !important;
+  }
+
+ /* New UI Skin End*/
+
+
+  /* UI Skin Two Start */
+
+    /*--/navigation --*/
+a.navbar-brand {
+    font-size: 2.8em;
+}
+li.nav-item a {
+    font-size: 1em;
+    display: block;
+    padding: 8px 20px;
+    clear: both;
+    font-weight: 600;
+    line-height: 1.42857143;
+    color: #333;
+    letter-spacing: 1px;
+}
+li.nav-item a:hover {
+    color: #009688;
+}
+li.nav-item {
+    margin: 0 1em;
+}
+.agile-banner_nav {
+    width: 100%;
+}
+.bg-light {
+    background-color: transparent !important;
+}
+.navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+    color: #333;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 0;
+    font-weight: 600;
+	margin: 0;
+}
+span.display {
+    font-size: 14px;
+    display: block;
+    font-weight: 600;
+    color: #009688;
+    text-align: center;
+    margin-top: -10px;
+    letter-spacing: 3px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
+    font-weight: 600;
+}
+.navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active {
+    color: #009688;
+    text-decoration: underline;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #009688;
+    text-decoration: underline;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler:hover {
+    color: #2b3945;
+}
+/*--//navigation --*/
+/* UI Skin Two End */
+
+ 
