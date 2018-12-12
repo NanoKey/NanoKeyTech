@@ -1,6 +1,6 @@
 /*-- Contact page --*/
 .inner-banner{
-	background: url("/src/assets/images/banner/bannerOne.jpg") no-repeat 0px 0px;
+	background: url("/assets/images/banner/bannerOne.jpg") no-repeat 0px 0px;
 	background-size: cover;
 	min-height: 200px;
 }

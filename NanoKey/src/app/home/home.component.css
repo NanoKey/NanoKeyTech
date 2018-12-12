@@ -34,7 +34,7 @@
 
 /*-- welcome bottom --*/
 .welcome_bottom{
-	background: url("/src/assets/images/banner/slide.jpg") no-repeat 0px 0px;
+	background: url("/assets/images/banner/slide.jpg") no-repeat 0px 0px;
 	background-size: cover;
 }
  .welcome_right:after{
