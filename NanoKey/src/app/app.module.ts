@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http'; 
 import {Http, HttpModule} from '@angular/http'
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import { RecaptchaModule } from 'angular-google-recaptcha';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -34,6 +36,11 @@ const routes: Routes = [
     FooterComponent
   ],
   imports: [
+    FormsModule ,
+    ReactiveFormsModule,
+    RecaptchaModule.forRoot({
+      siteKey: '6LdGf4EUAAAAANqtgLnw3OG6fwgcxkbCoqbfcflf',
+  }),
     BrowserModule,HttpClientModule,HttpModule,
     RouterModule.forRoot(routes)
   ],
