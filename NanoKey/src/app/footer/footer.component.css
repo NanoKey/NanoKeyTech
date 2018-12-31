@@ -66,6 +66,12 @@ button.btn1 {
     float: right;
     width: 15%;
 }
+address{
+    color: white !important;
+}
+address strong{
+    padding: 10px;
+}
 address h4,address p strong {
     font-size: 18px;
     color: #bbb;
@@ -95,7 +101,18 @@ address p a:hover {
     color: #009688;
 }
 .copyright {
-    background: #1b1b1b;
+    /* background: #1b1b1b; */
+    background: #222;
+}
+.pb-4, .py-4{
+    padding-bottom:0 !important;
+    padding-top: 0 !important;
+}
+.py-5{
+    padding-bottom:0 !important;
+}
+.row{    
+    text-align: center;
 }
 .social li {
     display: inline-block;
@@ -107,5 +124,23 @@ address p a:hover {
 .social li a:hover {
     color: #fff;
 }
-
+li{
+   float: left; 
+   padding: 5px;
+}
+#fb{
+    width: 33px;
+    height: 38px;
+    background: url(/assets/images/banner/fmtw.jpg) 0 0;
+    z-index: 9;
+    /* position: absolute; */
+    background-position: -36px -114px;
+}
+#twitter{
+    width: 46px;
+    height: 42px;
+    background: url(/assets/images/banner/fmtw.jpg) 0 0;
+    z-index: 9;
+    background-position: -117px -168px;
+}
 /*-- footer --*/

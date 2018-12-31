@@ -19,7 +19,9 @@
   color:white;
   /*font:700 1.4rem/1.4rem "Source Sans Pro","Hiragino Sans GB","Microsoft JhengHei",arial,helvetica,sans-serif;*/
 }
-
+.navbar-brand{
+  width:66% !important;
+}
 a.navbar-brand[_ngcontent-c0] {
   font-size: 1.8em !important;
 }
@@ -74,13 +76,16 @@ a.navbar-brand[_ngcontent-c0] {
   }
 }
 @media screen and (max-width: 512px) {
+  .navbar-brand{
+    width:66% !important;
+  }
   #imgLogo{
     width:58%;
     background: transparent;
   }
-	.navbar-light .navbar-toggler {
-		color: #fff;
-		border-color: #fff;
+    .navbar-light .navbar-toggler {
+        color: #fff;
+        border-color: #fff;
     background: #009688;
     font-size: 1.30rem !important;
   }
@@ -90,21 +95,21 @@ a.navbar-brand[_ngcontent-c0] {
     text-align: center;
     z-index: 99999 !important;
   }
-	.navbar-toggler{
-		margin-right: 22px !important;
-		}
-		.nav-item {
+    .navbar-toggler{
+        margin-right: 22px !important;
+        }
+        .nav-item {
     margin: 0 !important;    
     z-index: 99999 !important;
-	}
-	.nav-item a{
-		padding: 0  !important;
-		padding-right: 2px !important;
-		padding-bottom: 5px !important;
-	}
-	a.navbar-brand[_ngcontent-c0] {
-		font-size: 1.8em;
-	}
+    }
+    .nav-item a{
+        padding: 0  !important;
+        padding-right: 2px !important;
+        padding-bottom: 5px !important;
+    }
+    a.navbar-brand[_ngcontent-c0] {
+        font-size: 1.8em;
+    }
 }
 
 .ubea-nav ul {

@@ -15,12 +15,20 @@ import { ImagesliderComponent } from './imageslider/imageslider.component';
 import {} from './interfaces/image';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { TempSearchComponent } from './temp-search/temp-search.component';
+import { ExecutiveSearchComponent } from './executive-search/executive-search.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: 'Home', component: HomeComponent },
   { path: 'About', component: AboutComponent },
-  { path: 'Services', component: ServicesComponent },
+  { path: 'Services', 
+    component: ServicesComponent, 
+    children: [      
+          { path: 'TempSearch', component: TempSearchComponent },
+          { path: 'ExecutiveSearch', component: ExecutiveSearchComponent }
+        ]      
+  },
   { path: 'Contact', component: ContactComponent }
 ];
 
@@ -33,7 +41,9 @@ const routes: Routes = [
     ContactComponent,
     ImagesliderComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    TempSearchComponent,
+    ExecutiveSearchComponent
   ],
   imports: [
     FormsModule ,
